@@ -46,7 +46,6 @@ F:\Majid\SEMESTER4\SoftwareQualityAndUsability\Assignments\assignment2\Usability
 F:\Majid\SEMESTER4\SoftwareQualityAndUsability\Assignments\assignment2\UsabilitySprints\UsabilitySprints\obj\Debug\netcoreapp2.1\UsabilitySprints.TagHelpers.input.cache
 F:\Majid\SEMESTER4\SoftwareQualityAndUsability\Assignments\assignment2\UsabilitySprints\UsabilitySprints\obj\Debug\netcoreapp2.1\UsabilitySprints.TagHelpers.output.cache
 F:\Majid\SEMESTER4\SoftwareQualityAndUsability\Assignments\assignment2\UsabilitySprints\UsabilitySprints\obj\Debug\netcoreapp2.1\UsabilitySprints.RazorCoreGenerate.cache
-F:\Majid\SEMESTER4\SoftwareQualityAndUsability\Assignments\assignment2\UsabilitySprints\UsabilitySprints\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 F:\Majid\SEMESTER4\SoftwareQualityAndUsability\Assignments\assignment2\UsabilitySprints\UsabilitySprints\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 F:\Majid\SEMESTER4\SoftwareQualityAndUsability\Assignments\assignment2\UsabilitySprints\UsabilitySprints\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 F:\Majid\SEMESTER4\SoftwareQualityAndUsability\Assignments\assignment2\UsabilitySprints\UsabilitySprints\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
@@ -62,3 +61,4 @@ F:\Majid\SEMESTER4\SoftwareQualityAndUsability\Assignments\assignment2\Usability
 F:\Majid\SEMESTER4\SoftwareQualityAndUsability\Assignments\assignment2\UsabilitySprints\UsabilitySprints\obj\Debug\netcoreapp2.1\UsabilitySprints.dll
 F:\Majid\SEMESTER4\SoftwareQualityAndUsability\Assignments\assignment2\UsabilitySprints\UsabilitySprints\obj\Debug\netcoreapp2.1\UsabilitySprints.pdb
 F:\Majid\SEMESTER4\SoftwareQualityAndUsability\Assignments\assignment2\UsabilitySprints\UsabilitySprints\obj\Debug\netcoreapp2.1\UsabilitySprints.csproj.CopyComplete
+F:\Majid\SEMESTER4\SoftwareQualityAndUsability\Assignments\assignment2\UsabilitySprints\UsabilitySprints\obj\Debug\netcoreapp2.1\Razor\Views\Home\B2D.g.cshtml.cs

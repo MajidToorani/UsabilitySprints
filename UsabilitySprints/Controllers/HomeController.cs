@@ -14,14 +14,24 @@ namespace UsabilitySprints.Controllers
         {
             return View();
         }
-
-        public IActionResult About()
+        [HttpGet]
+        public IActionResult B2D()
         {
-            ViewData["Message"] = "Your application description page.";
-
             return View();
         }
-
+        [HttpPost]
+        public IActionResult B2D(ConvertViewModel myNumber, string value)
+        {
+            if (value == "B2D")
+            {
+                myNumber.Result = myNumber.DB(myNumber.Decimal);
+            }
+            if (value == "B2D")
+            {
+                myNumber.Result = myNumber.BD(myNumber.Binary);
+            }
+            return View(myNumber);
+        }
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
@@ -38,6 +48,6 @@ namespace UsabilitySprints.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        }        
     }
 }
