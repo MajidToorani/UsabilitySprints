@@ -14,15 +14,17 @@ namespace UsabilitySprints.Controllers
         {
             return View();
         }
+
         [HttpGet]
         public IActionResult B2D()
         {
             return View();
         }
+
         [HttpPost]
         public IActionResult B2D(ConvertViewModel myNumber, string value)
         {
-            if (value == "B2D")
+            if (value == "D2B")
             {
                 myNumber.Result = myNumber.DB(myNumber.Decimal);
             }
