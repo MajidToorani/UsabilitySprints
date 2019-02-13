@@ -24,7 +24,6 @@ namespace UsabilitySprints.Models
         }
         public int DB(int decimalNumber)
         {
-            decimalNumber = 0;
             int binaryNumber = 0;
             int remainder;
             while (decimalNumber > 0)
