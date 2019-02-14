@@ -22,18 +22,51 @@ namespace UsabilitySprints.Controllers
         }
 
         [HttpPost]
-        public IActionResult B2D(ConvertViewModel myNumber, string value)
-        {
-            if (value == "D2B")
+        public IActionResult B2D(ConvertViewModel myNumber, string command)
+        { 
+            if (command == "D2B")
             {
-                myNumber.Result = myNumber.DB(myNumber.Decimal);
+                myNumber.Result = DB(myNumber.Decimal);
             }
-            if (value == "B2D")
+            if (command == "B2D")
             {
-                myNumber.Result = myNumber.BD(myNumber.Binary);
+                myNumber.Result = BD(myNumber.Binary);
             }
             return View(myNumber);
         }
+
+        public string DB(int decimalNumber)
+        {
+            try
+            {
+                if (decimalNumber < 2)
+                    return decimalNumber.ToString();
+
+                var divisor = decimalNumber / 2;
+                var remainder = decimalNumber % 2;
+
+                return DB(divisor) + remainder;
+            }
+            catch (Exception)
+            {
+                return "Invalid input";
+            }
+                        
+        }
+
+        public string BD(string binary)
+        {
+            try
+            {
+                string decimalNumber = Convert.ToInt32(binary, 2).ToString();
+                return decimalNumber;
+            }
+            catch(Exception)
+            {
+                return "Invalid input";
+            }            
+        }
+   
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";

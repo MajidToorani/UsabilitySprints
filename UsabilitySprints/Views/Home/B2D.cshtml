@@ -2,6 +2,7 @@
  * Assignment # 2
  * Majid Tooranisama , Created : Feb 19, 2019
 -->
+
 @model ConvertViewModel
 
 @{
@@ -16,40 +17,18 @@
 <body onload="ChangeBackground('lightgrey');">
     @using (Html.BeginForm())
     {
-        <fieldset>
-            <legend style="color:blue">Binary-Decimal Conversion: </legend>
-            @Html.Label("Decimal number: ") @Html.EditorFor(x => x.Decimal) <br /><br />
-            @Html.Label("Binary number: ") @Html.EditorFor(x => x.Binary) <br /><br />
+    <fieldset>
+        <legend style="color:blue">Binary-Decimal Conversion: </legend>
+        @Html.Label("Decimal number: ") @Html.EditorFor(x => x.Decimal) <br /><br />
+        <input type="submit" value="D2B" name="command" /><br /><br />        
 
-            <input type="submit" value="D2B" name="value" /><br><br>
-            <input type="submit" value="B2D" name="value" />
-            <br /><br />
-            <h2>
-                @Html.Label("Equals: ") @Html.DisplayFor(x => x.Result)
-            </h2>
-        </fieldset>
+        @Html.Label("Binary number: ") @Html.EditorFor(x => x.Binary) <br /><br />
+        <input type="submit" value="B2D" name="command" /><br /><br />
+        <h2>
+            @Html.Label("Equals: ") @Html.DisplayFor(x => x.Result)
+        </h2>
+    </fieldset>
     }
 </body>
 
-    @*<div align="left">
-        <div>
-            <h1></h1>
-        </div><br /><br />
-        <div>
-            <h3>D2B</h3>
-            <label>Type your number here:</label>
-            <textarea id="US7originalText" rows="3" cols="40"></textarea>
-            <label>Result:</label>
-            <textarea id="D2B" disabled rows="3" cols="40"></textarea><br /><br />
-            <input type="submit" value="D2B" onclick="BD();" />
-        </div><br />
-        <div>
-            <h3>B2D</h3>
-            <label>Type your number here:</label>
-            <textarea id="B2D" rows="3" cols="40"></textarea>
-            <label>Result:</label>
-            <textarea id="B2D" disabled rows="3" cols="40"></textarea><br /><br />
-            <input type="submit" value="B2D" onclick="BD();" />
-        </div>
-    </div>*@
-
+    
