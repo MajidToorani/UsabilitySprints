@@ -15,6 +15,20 @@ namespace UsabilitySprints.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult Index(ConvertViewModel myNumber, string command)
+        {
+            if (command == "D2B")
+            {
+                myNumber.Result = DB(myNumber.Decimal);
+            }
+            if (command == "B2D")
+            {
+                myNumber.Result = BD(myNumber.Binary);
+            }
+            return View(myNumber);
+        }
+
         [HttpGet]
         public IActionResult B2D()
         {
@@ -23,7 +37,7 @@ namespace UsabilitySprints.Controllers
 
         [HttpPost]
         public IActionResult B2D(ConvertViewModel myNumber, string command)
-        { 
+        {
             if (command == "D2B")
             {
                 myNumber.Result = DB(myNumber.Decimal);

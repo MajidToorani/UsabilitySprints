@@ -2,7 +2,7 @@
  * Assignment # 1
  * Majid Tooranisama , Created : Feb 5, 2019
 -->
-
+@model ConvertViewModel
 @{
     ViewData["Title"] = "Style Conversion";
 }
@@ -103,47 +103,66 @@
 
 <body onload="ChangeBackground('lightgrey');">
     <div align="left">
-        <div>
-            <h1>Style Conversion</h1>
-        </div><br /><br />
-        <div>
-            <h3>Green Render</h3>
-            <label>Type your text here:</label>
-            <textarea id="US1originalText" rows="3" cols="40"></textarea>
-            <label>Result:</label>
-            <textarea id="greenBackground" disabled rows="3" cols="40"></textarea><br /><br />
-            <input type="submit" value="Green Render" onclick="BackColor('lightgreen');" />
-        </div><br />
-        <div>
-            <h3>Reverse</h3>
-            <label>Type your text here:</label>
-            <textarea id="US5originalText" rows="3" cols="40"></textarea>
-            <label>Result:</label>
-            <textarea id="reversedText" disabled rows="3" cols="40"></textarea><br /><br />
-            <input type="submit" value="Reverse" onclick="ReverseMyText();" />
-        </div><br />
-        <div>
-            <h3>Bold Render</h3>
-            <label>Type your text here:</label>
-            <textarea id="US3originalText" rows="3" cols="40"></textarea>
-            <label>Result:</label>
-            <span id="boldText"></span><br />
-            <input type="submit" value="Bold" onclick="Bold();" />
-        </div><br />
-        <div>
-            <h3>Italicize</h3>
-            <label>Type your text here:</label>
-            <textarea id="US4originalText" rows="3" cols="40"></textarea>
-            <label>Result:</label>
-            <span id="italicizedText"></span><br />
-            <input type="submit" value="Italicize" onclick="Italicize();" />
-        </div><br />
-        @*<div>
+        <br/><br/>
+        <fieldset>
+            <legend style="color:blue">Style Conversion: </legend>
+            <div>
+                <h2>Green Render</h2>
+                <label style="font-size:25px">Type your text here:</label>
+                <textarea id="US1originalText" rows="3" cols="40"></textarea>
+                <label style="font-size:25px" >Result:</label>
+                <textarea id="greenBackground" disabled rows="3" cols="40"></textarea><br /><br />
+                <input type="submit" value="Green Render" onclick="BackColor('lightgreen');" />
+            </div><br />
+            <div>
+                <h2>Reverse</h2>
+                <label style="font-size:25px">Type your text here:</label>
+                <textarea id="US5originalText" rows="3" cols="40"></textarea>
+                <label style="font-size:25px" >Result:</label>
+                <textarea id="reversedText" disabled rows="3" cols="40"></textarea><br /><br />
+                <input type="submit" value="Reverse" onclick="ReverseMyText();" />
+            </div><br />
+            <div>
+                <h2>Bold Render</h2>
+                <label style="font-size:25px">Type your text here:</label>
+                <textarea id="US3originalText" rows="3" cols="40"></textarea>
+                <label style="font-size:25px">Result:</label>
+                <span id="boldText"></span><br />
+                <input type="submit" value="Bold" onclick="Bold();" />
+            </div><br />
+            <div>
+                <h2>Italicize</h2>
+                <label style="font-size:25px">Type your text here:</label>
+                <textarea id="US4originalText" rows="3" cols="40"></textarea>
+                <label style="font-size:25px">Result:</label>
+                <span id="italicizedText"></span><br />
+                <input type="submit" value="Italicize" onclick="Italicize();" />
+            </div><br />
+        </fieldset>
+        @using (Html.BeginForm())
+        {
+        <fieldset>
+            <legend style="color:blue">Binary-Decimal Conversion: </legend>
+            <h3>
+                @Html.Label("Decimal number: ") @Html.EditorFor(x => x.Decimal) <br /><br />
+                <input type="submit" value="D2B" name="command" /><br /><br />
+            </h3>
+            <h3>
+            @Html.Label("Binary number: ") @Html.EditorFor(x => x.Binary) <br /><br />
+            <input type="submit" value="B2D" name="command" /><br /><br />
+            </h3>
+            <h3>
+                @Html.Label("Equals: ") @Html.DisplayFor(x => x.Result)
+            </h3>
+        </fieldset>
+        }
+
+            @*<div>
                 <h3>Dark Mode Task</h3>
                 <label>Click the button</label><br />
                 <input type="submit" value="Dark mode" onclick="ChangeBackground('black');" />
             </div><br />*@
-        @*<div>
+            @*<div>
                 <h3>Binary Check Task</h3>
                 <label>Type your number here:</label>
                 <input id="US2originalNumber" type="number" />
