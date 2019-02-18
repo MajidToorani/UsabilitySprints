@@ -101,29 +101,29 @@
     <script src="~/js/Sprint1.js"></script>
 </head>
 
-<body onload="ChangeBackground('lightgrey');">
+<body onload="ChangeBackground('lightyellow');">
     <div align="left">
-        <br/><br/>
-        <fieldset>
+        <br /><br />
+        <fieldset id="styleConversion">
             <legend style="color:blue">Style Conversion: </legend>
             <div>
-                <h2>Green Render</h2>
+                <h2 style="color:blue">Green Render</h2>
                 <label style="font-size:25px">Type your text here:</label>
                 <textarea id="US1originalText" rows="3" cols="40"></textarea>
-                <label style="font-size:25px" >Result:</label>
+                <label style="font-size:25px">Result:</label>
                 <textarea id="greenBackground" disabled rows="3" cols="40"></textarea><br /><br />
                 <input type="submit" value="Green Render" onclick="BackColor('lightgreen');" />
             </div><br />
             <div>
-                <h2>Reverse</h2>
+                <h2 style="color:blue">Reverse</h2>
                 <label style="font-size:25px">Type your text here:</label>
                 <textarea id="US5originalText" rows="3" cols="40"></textarea>
-                <label style="font-size:25px" >Result:</label>
+                <label style="font-size:25px">Result:</label>
                 <textarea id="reversedText" disabled rows="3" cols="40"></textarea><br /><br />
                 <input type="submit" value="Reverse" onclick="ReverseMyText();" />
             </div><br />
             <div>
-                <h2>Bold Render</h2>
+                <h2 style="color:blue">Bold Render</h2>
                 <label style="font-size:25px">Type your text here:</label>
                 <textarea id="US3originalText" rows="3" cols="40"></textarea>
                 <label style="font-size:25px">Result:</label>
@@ -131,7 +131,7 @@
                 <input type="submit" value="Bold" onclick="Bold();" />
             </div><br />
             <div>
-                <h2>Italicize</h2>
+                <h2 style="color:blue">Italicize</h2>
                 <label style="font-size:25px">Type your text here:</label>
                 <textarea id="US4originalText" rows="3" cols="40"></textarea>
                 <label style="font-size:25px">Result:</label>
@@ -139,36 +139,37 @@
                 <input type="submit" value="Italicize" onclick="Italicize();" />
             </div><br />
         </fieldset>
+        <br /><br />
         @using (Html.BeginForm())
         {
-        <fieldset>
-            <legend style="color:blue">Binary-Decimal Conversion: </legend>
-            <h3>
-                @Html.Label("Decimal number: ") @Html.EditorFor(x => x.Decimal) <br /><br />
-                <input type="submit" value="D2B" name="command" /><br /><br />
-            </h3>
-            <h3>
-            @Html.Label("Binary number: ") @Html.EditorFor(x => x.Binary) <br /><br />
-            <input type="submit" value="B2D" name="command" /><br /><br />
-            </h3>
-            <h3>
-                @Html.Label("Equals: ") @Html.DisplayFor(x => x.Result)
-            </h3>
-        </fieldset>
+            <fieldset id="binaryConversion">
+                <legend style="color:blue">Binary-Decimal Conversion: </legend>
+                <h3>
+                    @Html.Label("Decimal number: ") @Html.EditorFor(x => x.Decimal) <br /><br />
+                    <input type="submit" value="D2B" name="command" /><br /><br />
+                </h3>
+                <h3>
+                    @Html.Label("Binary number: ") @Html.EditorFor(x => x.Binary) <br /><br />
+                    <input type="submit" value="B2D" name="command" /><br /><br />
+                </h3>
+                <h3>
+                    @Html.Label("Equals: ") @Html.DisplayFor(x => x.Result)
+                </h3>
+            </fieldset>
         }
 
-            @*<div>
-                <h3>Dark Mode Task</h3>
-                <label>Click the button</label><br />
-                <input type="submit" value="Dark mode" onclick="ChangeBackground('black');" />
-            </div><br />*@
-            @*<div>
-                <h3>Binary Check Task</h3>
-                <label>Type your number here:</label>
-                <input id="US2originalNumber" type="number" />
-                <label>Result:</label>
-                <input id="binary" disabled /><br><br>
-                <input type="submit" value="Binary check" onclick="BinaryCheck();" />
-            </div>*@
+        @*<div>
+            <h3>Dark Mode Task</h3>
+            <label>Click the button</label><br />
+            <input type="submit" value="Dark mode" onclick="ChangeBackground('black');" />
+        </div><br />*@
+        @*<div>
+            <h3>Binary Check Task</h3>
+            <label>Type your number here:</label>
+            <input id="US2originalNumber" type="number" />
+            <label>Result:</label>
+            <input id="binary" disabled /><br><br>
+            <input type="submit" value="Binary check" onclick="BinaryCheck();" />
+        </div>*@
     </div>
 </body>
