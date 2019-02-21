@@ -11801,11 +11801,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Majid\\SEMESTER4\\SoftwareQualityAndUsability\\Assignments\\assignment2\\UsabilitySprints\\UsabilitySprints\\UsabilitySprints.csproj",
+      "projectUniqueName": "F:\\Majid\\SEMESTER4\\SoftwareQualityAndUsability\\Assignments\\assignment2\\MTAssignment2\\UsabilitySprints\\UsabilitySprints\\UsabilitySprints.csproj",
       "projectName": "UsabilitySprints",
-      "projectPath": "F:\\Majid\\SEMESTER4\\SoftwareQualityAndUsability\\Assignments\\assignment2\\UsabilitySprints\\UsabilitySprints\\UsabilitySprints.csproj",
+      "projectPath": "F:\\Majid\\SEMESTER4\\SoftwareQualityAndUsability\\Assignments\\assignment2\\MTAssignment2\\UsabilitySprints\\UsabilitySprints\\UsabilitySprints.csproj",
       "packagesPath": "C:\\Users\\majid\\.nuget\\packages\\",
-      "outputPath": "F:\\Majid\\SEMESTER4\\SoftwareQualityAndUsability\\Assignments\\assignment2\\UsabilitySprints\\UsabilitySprints\\obj\\",
+      "outputPath": "F:\\Majid\\SEMESTER4\\SoftwareQualityAndUsability\\Assignments\\assignment2\\MTAssignment2\\UsabilitySprints\\UsabilitySprints\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
