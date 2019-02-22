@@ -1,10 +1,12 @@
 ﻿<!--
- * Assignment # 1
- * Majid Tooranisama , Created : Feb 5, 2019
+ * Majid Tooranisama
+ * Assignment # 1 , Created : Feb 5, 2019
+ * Assignment # 2 , Created : Feb 22, 2019
 -->
+
 @model ConvertViewModel
 @{
-    ViewData["Title"] = "Style Conversion";
+    ViewData["Title"] = "Conversion";
 }
 
 @*<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
@@ -105,71 +107,76 @@
     <div align="left">
         <br /><br />
         <fieldset id="styleConversion">
-            <legend style="color:blue">Style Conversion: </legend>
+            <legend style="color:blue">Conversion: </legend>
             <div>
-                <h2 style="color:blue">Green Render</h2>
+                <h3 style="color:blue">Green Render:</h3>
                 <label style="font-size:25px">Type your text here:</label>
                 <textarea id="US1originalText" rows="3" cols="40"></textarea>
                 <label style="font-size:25px">Result:</label>
                 <textarea id="greenBackground" disabled rows="3" cols="40"></textarea><br /><br />
-                <input type="submit" value="Green Render" onclick="BackColor('lightgreen');" />
+                <input type="submit" value="Green Render" style="font-size:25px" onclick="BackColor('lightgreen');" />
             </div><br />
             <div>
-                <h2 style="color:blue">Reverse</h2>
+                <h3 style="color:blue">Reverse:</h3>
                 <label style="font-size:25px">Type your text here:</label>
                 <textarea id="US5originalText" rows="3" cols="40"></textarea>
                 <label style="font-size:25px">Result:</label>
                 <textarea id="reversedText" disabled rows="3" cols="40"></textarea><br /><br />
-                <input type="submit" value="Reverse" onclick="ReverseMyText();" />
+                <input type="submit" value="Reverse" style="font-size:25px" onclick="ReverseMyText();" />
             </div><br />
             <div>
-                <h2 style="color:blue">Bold Render</h2>
+                <h3 style="color:blue">Bold Render:</h3>
                 <label style="font-size:25px">Type your text here:</label>
                 <textarea id="US3originalText" rows="3" cols="40"></textarea>
                 <label style="font-size:25px">Result:</label>
                 <span id="boldText"></span><br />
-                <input type="submit" value="Bold" onclick="Bold();" />
+                <input type="submit" value="Bold" style="font-size:25px" onclick="Bold();" />
             </div><br />
             <div>
-                <h2 style="color:blue">Italicize</h2>
+                <h3 style="color:blue">Italicize:</h3>
                 <label style="font-size:25px">Type your text here:</label>
                 <textarea id="US4originalText" rows="3" cols="40"></textarea>
                 <label style="font-size:25px">Result:</label>
                 <span id="italicizedText"></span><br />
-                <input type="submit" value="Italicize" onclick="Italicize();" />
+                <input type="submit" value="Italicize" style="font-size:25px" onclick="Italicize();" />
             </div><br />
         </fieldset>
         <br /><br />
+
         @using (Html.BeginForm())
         {
-            <fieldset id="binaryConversion">
-                <legend style="color:blue">Binary-Decimal Conversion: </legend>
-                <h3>
-                    @Html.Label("Decimal number: ") @Html.EditorFor(x => x.Decimal) <br /><br />
-                    <input type="submit" value="D2B" name="command" /><br /><br />
-                </h3>
-                <h3>
-                    @Html.Label("Binary number: ") @Html.EditorFor(x => x.Binary) <br /><br />
-                    <input type="submit" value="B2D" name="command" /><br /><br />
-                </h3>
-                <h3>
-                    @Html.Label("Equals: ") @Html.DisplayFor(x => x.Result)
-                </h3>
-            </fieldset>
+              <fieldset id="binaryConversion">
+                  <legend style="color:blue">D2B: </legend>
+                  <h3>
+                      @Html.Label("Decimal number: ") @Html.EditorFor(x => x.Decimal) <br /><br />
+                      <input type="submit" value="D2B" name="command" /><br /><br />
+                  </h3>
+                  <h3>
+                      @Html.Label("Equals: ") @Html.DisplayFor(x => x.Result1)
+                  </h3><br /><br />
+                  <legend style="color:blue">B2D: </legend>
+                  <h3>
+                      @Html.Label("Binary number: ") @Html.EditorFor(x => x.Binary) <br /><br />
+                      <input type="submit" value="B2D" name="command" /><br /><br />
+                  </h3>
+                  <h3>
+                      @Html.Label("Equals: ") @Html.DisplayFor(x => x.Result2)
+                  </h3>
+              </fieldset>
         }
 
         @*<div>
-            <h3>Dark Mode Task</h3>
-            <label>Click the button</label><br />
-            <input type="submit" value="Dark mode" onclick="ChangeBackground('black');" />
-        </div><br />*@
+                <h3>Dark Mode Task</h3>
+                <label>Click the button</label><br />
+                <input type="submit" value="Dark mode" onclick="ChangeBackground('black');" />
+            </div><br />*@
         @*<div>
-            <h3>Binary Check Task</h3>
-            <label>Type your number here:</label>
-            <input id="US2originalNumber" type="number" />
-            <label>Result:</label>
-            <input id="binary" disabled /><br><br>
-            <input type="submit" value="Binary check" onclick="BinaryCheck();" />
-        </div>*@
+                <h3>Binary Check Task</h3>
+                <label>Type your number here:</label>
+                <input id="US2originalNumber" type="number" />
+                <label>Result:</label>
+                <input id="binary" disabled /><br><br>
+                <input type="submit" value="Binary check" onclick="BinaryCheck();" />
+            </div>*@
     </div>
 </body>

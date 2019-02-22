@@ -1,6 +1,6 @@
 ﻿<!--
  * Assignment # 2
- * Majid Tooranisama , Created : Feb 19, 2019
+ * Majid Tooranisama , Created : Feb 22, 2019
 -->
 
 @model ConvertViewModel
@@ -20,12 +20,14 @@
     <fieldset>
         <legend style="color:blue">Binary-Decimal Conversion: </legend>
         @Html.Label("Decimal number: ") @Html.EditorFor(x => x.Decimal) <br /><br />
-        <input type="submit" value="D2B" name="command" /><br /><br />        
-
+        <input type="submit" value="D2B" name="command" /><br /><br />
+        <h2>
+            @Html.Label("Equals: ") @Html.DisplayFor(x => x.Result1)
+        </h2>
         @Html.Label("Binary number: ") @Html.EditorFor(x => x.Binary) <br /><br />
         <input type="submit" value="B2D" name="command" /><br /><br />
         <h2>
-            @Html.Label("Equals: ") @Html.DisplayFor(x => x.Result)
+            @Html.Label("Equals: ") @Html.DisplayFor(x => x.Result2)
         </h2>
     </fieldset>
     }

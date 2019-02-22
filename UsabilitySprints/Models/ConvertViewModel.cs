@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+/*
+ * Majid Tooranisama
+ * Assignment # 2 , Created : Feb 22, 2019
+ */
+
 namespace UsabilitySprints.Models
 {
     public class ConvertViewModel
@@ -19,7 +24,13 @@ namespace UsabilitySprints.Models
             set;
         }
 
-        public string Result
+        public string Result1
+        {
+            get;
+            set;
+        }
+
+        public string Result2
         {
             get;
             set;

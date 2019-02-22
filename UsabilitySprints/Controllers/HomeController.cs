@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using UsabilitySprints.Models;
 
+/*
+ * Majid Tooranisama
+ * Assignment # 2 , Created : Feb 22, 2019
+ */
+
 namespace UsabilitySprints.Controllers
 {
     public class HomeController : Controller
@@ -20,11 +25,11 @@ namespace UsabilitySprints.Controllers
         {
             if (command == "D2B")
             {
-                myNumber.Result = DB(myNumber.Decimal);
+                myNumber.Result1 = DB(myNumber.Decimal);
             }
             if (command == "B2D")
             {
-                myNumber.Result = BD(myNumber.Binary);
+                myNumber.Result2 = BD(myNumber.Binary);
             }
             return View(myNumber);
         }
@@ -40,11 +45,11 @@ namespace UsabilitySprints.Controllers
         {
             if (command == "D2B")
             {
-                myNumber.Result = DB(myNumber.Decimal);
+                myNumber.Result1 = DB(myNumber.Decimal);
             }
             if (command == "B2D")
             {
-                myNumber.Result = BD(myNumber.Binary);
+                myNumber.Result2 = BD(myNumber.Binary);
             }
             return View(myNumber);
         }
